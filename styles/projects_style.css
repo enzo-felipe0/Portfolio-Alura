@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*
+font-family: "Lato", sans-serif;
+font-family: "Do Hyeon", sans-serif;
+*/
+
+:root{
+    --rosinha: #FF577F;
+    --branco: #F6F6F6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 3.18rem;
+    
+}
+
+.link_header{
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    color: var(--rosinha);
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.836);
+    box-sizing: border-box;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+}
+
+.projeto{
+    padding: 5% 5%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.projeto_section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.primeira_palavra{
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 2.25rem;
+    color: var(--branco);
+}
+
+.segunda_palavra{
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 2.25rem;
+    color: var(--rosinha)
+}
+
+.texto_projeto{
+    font-family: "Lato", sans-serif;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.links_projetos{
+    display: flex;
+    justify-content: center;
+    gap: 4.1rem;
+    margin-top: 0.62rem;
+    margin-bottom: 9.375rem;
+    
+    /*filter: drop-shadow(10px 10px var(--rosinha));*/
+
+}
+
+.link.projeto{
+    border-radius: 1rem;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--rosinha);
+    padding: 1.5rem;
+}
+
+.autoria_footer{
+    color: #b9b9b9;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}

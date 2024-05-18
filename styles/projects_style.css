@@ -32,6 +32,10 @@ header{
     color: var(--rosinha);
 }
 
+.link_header:hover{
+    filter: drop-shadow(0 0 4px var(--rosinha));
+}
+
 body{
     background-color: rgba(0, 0, 0, 0.836);
     box-sizing: border-box;
@@ -76,14 +80,16 @@ body{
     gap: 4.1rem;
     margin-top: 0.62rem;
     margin-bottom: 9.375rem;
-    
-    /*filter: drop-shadow(10px 10px var(--rosinha));*/
-
 }
 
-.link.projeto{
+.link_projeto{
     border-radius: 1rem;
 }
+
+.link_projeto:hover{
+    filter: drop-shadow(0 0 6px var(--rosinha));
+}
+
 
 
 
@@ -100,4 +106,27 @@ footer{
     color: #b9b9b9;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
+}
+
+@media (max-width: 400px){
+    header{
+        gap: 1.5rem;
+        padding-top: 2.5rem;
+        align-items: center;
+    }
+
+    .link_header{
+        font-size: 1.2rem;
+    } 
+
+    .projeto_section{
+        width: 20rem;
+    }
+
+    .links_projetos{
+        width: 22rem;
+        flex-direction: column;
+        margin-bottom: 3.25rem;
+        align-items: center;
+    }
 }

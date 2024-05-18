@@ -32,6 +32,10 @@ header{
     color: var(--rosinha);
 }
 
+.link_header:hover{
+    filter: drop-shadow(0 0 4px var(--rosinha));
+}
+
 body{
     background-color: rgba(0, 0, 0, 0.836);
     box-sizing: border-box;
@@ -94,6 +98,11 @@ p{
     padding: 1rem 0;
 }
 
+.certificado_bt:hover{
+    filter: drop-shadow(0 0 4px var(--rosinha));
+}
+
+
 .skills_img{
     filter: drop-shadow(-1.3rem 0.5rem var(--rosinha));
 }
@@ -112,4 +121,36 @@ footer{
     color: #b9b9b9;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
+}
+
+@media (max-width: 400px){
+    header{
+        gap: 1.5rem;
+        padding-top: 2.5rem;
+        align-items: center;
+    }
+
+    .link_header{
+        font-size: 1.2rem;
+    }
+
+    .skills_img{
+        width: 20rem;
+    }
+
+    .habilidades{
+        justify-content: center;
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    .habilidades_section{
+        width: 20rem;
+        padding-right: 0;
+        padding-top: 3.125rem;
+        padding-bottom: 4.5rem;
+        margin-right: 0;
+    }
 }
